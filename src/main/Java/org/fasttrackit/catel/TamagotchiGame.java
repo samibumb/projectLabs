@@ -2,8 +2,7 @@ package org.fasttrackit.catel;
 
 public class TamagotchiGame {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args){
 
         Catel dog1 = new Catel();
         dog1.setName("Rex");
