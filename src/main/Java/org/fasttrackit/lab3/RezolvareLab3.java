@@ -21,10 +21,11 @@ public class RezolvareLab3 {
         mAritmetica=(a+b)/2 ;
         System.out.println("Media aritmetica este egala cu : "+mAritmetica);
 
-    interval(8);
-    inversul(789,0);
-    palindrom(3553,0,0);
-    sumaInt(123,0);
+    /*ex13*/interval(8);
+    /*ex7*/inversul(789,0);
+    /*ex8*/palindrom(3553,0,0);
+    /*ex11*/sumaInt(123,0);
+    /*ex4*/tablaInmultirii(0,0,0);
 
 
     }
@@ -79,7 +80,24 @@ public class RezolvareLab3 {
         System.out.println("Suma este : " +sum);
 
     }
-     
+
+    //Exercitiul 4
+
+    public static void tablaInmultirii(int x , int i , int tabla){
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("x : ");
+        x=scanner.nextInt();
+
+        for(i=0;i<=10;i++){
+
+            tabla=i*x ;
+            System.out.println(i+"*"+x+"="+tabla);
+        }
+
+
+
+    }
 
 }
 
