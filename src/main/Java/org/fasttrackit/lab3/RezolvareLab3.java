@@ -26,7 +26,7 @@ public class RezolvareLab3 {
     /*ex8*/palindrom(3553,0,0);
     /*ex11*/sumaInt(123,0);
     /*ex4*/tablaInmultirii(0,0,0);
-
+    xLaPutereaY(4,3,1);
 
     }
     //Exercitiul 13
@@ -97,6 +97,14 @@ public class RezolvareLab3 {
 
 
 
+    }
+
+    public static void xLaPutereaY(int x , int y , int nr){
+
+        for(int i=0;i<y;i++){
+            nr=x*nr;
+        }
+        System.out.println("x la puterea y este :"+nr);
     }
 
 }
