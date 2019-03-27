@@ -14,7 +14,7 @@ public class Boy extends Om {
 
     public void goTosleep(int hour){
         if (hour>9){
-            throw new IllegalArgumentException("It is to late for you kid");
+            throw new ArithmeticException("It is to late for you kid");
         }else{
             System.out.println("zZz");
         }

@@ -12,11 +12,11 @@ public class MainClass {
 
         om.sleeping();
         om.eating(80);
-        om.goingToWork(8,4);
+        om.goingToWork(8,4.59);
         om.setFirstName("Darius");
         om.setLastName("Pop");
         om.setAge(23);
-        om.setAddress("USA");
+
 
         System.out.println(om);
 

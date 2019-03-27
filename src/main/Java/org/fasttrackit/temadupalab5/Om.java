@@ -21,7 +21,7 @@ public class Om {
 
     public void eating(double kilograms){
         if(kilograms>100){
-            throw new IndexOutOfBoundsException("Go to the gym.You are fat.");
+            throw new ArithmeticException("Go to the gym.You are fat.");
         }else {
             System.out.println("Keep eating!");
         }
@@ -35,8 +35,8 @@ public class Om {
     public void goingToWork(double going , double comingHome){
 
 
-          if (going<8 && comingHome > 5) {
-              throw new IllegalArgumentException("You must go home.Is already 5!");
+          if (going<8 || comingHome > 5) {
+              throw new ArithmeticException("You must go home.Is already 5!");
           } else if (going < 5) {
               System.out.println("Stay at work!");
           } else {
