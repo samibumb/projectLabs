@@ -23,7 +23,7 @@ public class AlteTreiExercitii {
         System.out.println("Media este " + medie);
 
        /*ex 3*/ maxNr();
-        /*ex 15*/factorial(1);
+        /*ex 15*/factorial();
 
     }
 
@@ -49,8 +49,8 @@ public class AlteTreiExercitii {
             System.out.println("Max value is :"+max);
         }
 
-        public static void factorial(int factorial){
-        int a=5;
+        public static void factorial(){
+        int a=5,factorial=1;
         for (int i=1;i<=a;i++){
             factorial=factorial*i;
         }
