@@ -16,7 +16,14 @@ public class Boy extends Om {
         if (hour>9){
             throw new ArithmeticException("It is to late for you kid");
         }else{
-            System.out.println("zZz");
+            System.out.println("ZzZz");
+        }
+    }
+
+    public void playing(int maxHourToStayOutside) throws ArithmeticException{
+        if(maxHourToStayOutside>9){
+
+            throw new ArithmeticException("BauBau steals you.");
         }
     }
 

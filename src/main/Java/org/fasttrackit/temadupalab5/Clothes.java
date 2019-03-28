@@ -1,14 +1,14 @@
 package org.fasttrackit.temadupalab5;
 
-public class Clothes {
+public class Clothes extends Om{
 
-    private String material;
+    private String typeOfClothing;
 
-    public String getMaterial() {
-        return material;
+    public String getTypeOfClothing() {
+        return typeOfClothing;
     }
 
-    public void setMaterial(String material) {
-        this.material = material;
+    public void setTypeOfClothing(String typeOfClothing) {
+        this.typeOfClothing = typeOfClothing;
     }
 }
