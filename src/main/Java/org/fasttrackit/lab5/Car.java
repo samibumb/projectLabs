@@ -12,17 +12,6 @@ public class Car {
 
     private int power;
 
-    private Wheel roataSpateStanga = new Wheel();
-
-    private Wheel roataSpateDreapta;
-
-    private Wheel roataFataStanga;
-
-    private Wheel roataFataDreapta;
-
-    private int nrOfWheels;
-
-    private int nrOfChairs;
 
 
     public void run(){
@@ -37,12 +26,6 @@ public class Car {
     public Car(){
         System.out.println("Constructor called");
     nrOfCars++;
-        roataSpateDreapta = new Wheel();
-
-        roataFataStanga = new Wheel();
-
-        roataFataDreapta= new Wheel();
-
         name="Audi";
         model="A6";
     }
@@ -83,8 +66,5 @@ public class Car {
     public void setPower(int power) {
         this.power = power;
     }
-
-
-
 
 }

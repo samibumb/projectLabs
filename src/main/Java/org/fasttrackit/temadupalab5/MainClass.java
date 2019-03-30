@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+
+
 public class MainClass {
 
     public static void main(String[] args){
@@ -64,14 +66,23 @@ public class MainClass {
         lista.add(mircea);
         lista.add(om);
         lista.add(marius);
-        System.out.println("The list of persons :"+lista);
+
+        System.out.println("The list of persons:");
+        for (Om listaOm : lista){
+            System.out.println(listaOm);
+        }
 
 
 
         List<Boy> lista2 = new LinkedList<Boy>();
         lista2.add(boy2);
-        System.out.println(lista2);
+        System.out.println("Another list with boys:");
+        for (Om listaBoy : lista2){
+            System.out.println(listaBoy);
+        }
     }
+
+
 
 
 }
