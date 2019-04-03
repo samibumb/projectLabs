@@ -16,7 +16,7 @@ public class HashTableEx {
         hsht.put("two","Marius");  //va afisa ultimul "two",Nu va scrie de doua ori
 
        //size(),get(),contains(),etc.
-        
+
        //displays the table
         Set<String> key = hsht.keySet();
         for (String tab : key){
