@@ -2,6 +2,7 @@ package org.fasttrackit.temadupalab6;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapEx {
 
@@ -33,6 +34,12 @@ public class MapEx {
         //this method will display America
 
         System.out.println("Collection has "+mapCol.size()+" elements"); //cate elemente are colectia
+
+        //displays the map
+        Set<Integer> keys=mapCol.keySet();
+        for (Integer nr : keys){
+            System.out.println(nr+"="+mapCol.get(nr));
+        }
 
 
     }
