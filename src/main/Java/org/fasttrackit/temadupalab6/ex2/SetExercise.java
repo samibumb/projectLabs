@@ -1,4 +1,6 @@
-package org.fasttrackit.temadupalab6;
+package org.fasttrackit.temadupalab6.ex2;
+
+import org.fasttrackit.temadupalab6.ex2.Person;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -18,8 +20,11 @@ public class SetExercise {
         list.add(p3);
 
         for (Person pers : list){
+
             System.out.println(pers);
+
         }
+        System.out.println(p1.hashCode());
 
         System.out.println("Collection has finally "+list.size()+" elements.");
 

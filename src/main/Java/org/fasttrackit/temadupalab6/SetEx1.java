@@ -5,7 +5,7 @@ import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import java.util.HashSet;
 import java.util.Set;
 
-public class SetEx {
+public class SetEx1 {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,5 @@
-package org.fasttrackit.temadupalab6;
+package org.fasttrackit.temadupalab6.ex2;
+
 
 import java.util.Objects;
 
@@ -23,13 +24,9 @@ public class Person {
         return Objects.hash(name);
     }
 
-    public String getName() {
-        return getName();
-    }
 
-    public String toString(){
+        public String toString () {
         return name;
     }
-
 
 }
