@@ -3,7 +3,9 @@ package org.fasttrackit.temadupalab6;
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class SetEx1 {
 
@@ -33,5 +35,32 @@ public class SetEx1 {
         for (Integer set : setList){
             System.out.println(set);
         }
+
+        System.out.println("------TreeSet exercise ---------");
+        treeSet();
+
+       }
+
+    public static void treeSet(){
+        Set<String> set =new TreeSet<>();
+
+        set.add("Ancuta");
+        set.add("Ana");
+        set.add("Andreea");
+        set.add("Andrei");
+        set.add("Ancuta");
+        System.out.println(set);
+
+        Iterator<String> iterator =set.iterator();
+        int count=0;
+        while (count<set.size()) {
+            while (iterator.hasNext()) {
+                String nume = iterator.next();
+                System.out.println(count + "." + nume);
+                count++;
+            }
+
+        }
+
     }
 }

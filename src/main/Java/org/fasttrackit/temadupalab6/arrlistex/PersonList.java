@@ -12,7 +12,7 @@ public class PersonList implements Runnable{
         List<String> list = new LinkedList<>();
 
         list.add("Ana are mere");
-        list.add("John plays footbal");
+        list.add("John ");
         list.add("Andrei");
         list.add(0,"Sami");
         Collections.sort(list);
@@ -20,11 +20,12 @@ public class PersonList implements Runnable{
 
         try{
              for(String str :list){
-                 Thread.sleep(1000);
+                 Thread.sleep(1500);
                  System.out.println(str);
-                 Thread.sleep(2000);
-                 System.out.println("zZz");
+                 Thread.sleep(1000);
+                 System.out.println("--------------");
              }
+            System.out.println("List finished.");
     }catch(InterruptedException i){
             System.out.println("List interrupted temporary.");
         }
