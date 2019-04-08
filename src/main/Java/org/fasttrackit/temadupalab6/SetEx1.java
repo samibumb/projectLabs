@@ -19,10 +19,10 @@ public class SetEx1 {
         setList.add(4);
         setList.add(4);
         boolean con =setList.contains(7); // colectia nu contine numarul 7,va returna valoarea false
-        System.out.println(con);
+        System.out.println("Contine nr :" +con);
         setList.add(7);
         boolean contine = setList.contains(7); //colectia va contine nr 7
-        System.out.println("Collection after adding 7 :\n"+contine);
+        System.out.println("Collection after adding 7 :"+contine);
 
         System.out.println("Colectia are " +setList.size()+" elemente");
 
@@ -31,12 +31,15 @@ public class SetEx1 {
          * Set sorteaza instantaneu,in ordine alfabetica(A-Z) sau numerica(-INFINIT->+INFINIT),
          * elementele sale.
          */
-
-        for (Integer set : setList){
-            System.out.println(set);
+        int cnt=1;
+        while (cnt<=setList.size()) {
+            for (Integer set : setList) {
+                System.out.println(cnt+". "+set);
+                cnt++;
+            }
         }
 
-        System.out.println("------TreeSet exercise ---------");
+        System.out.println("\n"+"------TreeSet exercise ---------");
         treeSet();
 
        }
@@ -49,11 +52,14 @@ public class SetEx1 {
         set.add("Andreea");
         set.add("Andrei");
         set.add("Ancuta");
-        System.out.println(set);
+        for (String tree :set){
+            System.out.println(tree);
+        }
 
+        System.out.println("\n"+"TreeSet with iterator :");
         Iterator<String> iterator =set.iterator();
-        int count=0;
-        while (count<set.size()) {
+        int count=1;
+        while (count<=set.size()) {
             while (iterator.hasNext()) {
                 String nume = iterator.next();
                 System.out.println(count + "." + nume);
