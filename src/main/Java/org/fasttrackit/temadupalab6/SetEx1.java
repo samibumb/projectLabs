@@ -1,6 +1,5 @@
 package org.fasttrackit.temadupalab6;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -52,8 +51,10 @@ public class SetEx1 {
         set.add("Andreea");
         set.add("Andrei");
         set.add("Ancuta");
+        int counter=1;
         for (String tree :set){
-            System.out.println(tree);
+            System.out.println(counter+". "+tree);
+            counter++;
         }
 
         System.out.println("\n"+"TreeSet with iterator :");
@@ -62,7 +63,7 @@ public class SetEx1 {
         while (count<=set.size()) {
             while (iterator.hasNext()) {
                 String nume = iterator.next();
-                System.out.println(count + "." + nume);
+                System.out.println(count + ". " + nume);
                 count++;
             }
 

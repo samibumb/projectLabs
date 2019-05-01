@@ -1,6 +1,5 @@
 package org.fasttrackit.temadupalab6;
 
-import java.util.Collections;
 import java.util.Hashtable;
 import java.util.Set;
 
