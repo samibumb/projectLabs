@@ -88,10 +88,10 @@ public static void createTable() {
            ResultSet resultSet = statement.executeQuery("Select * from agendaTelefonica;");
 
            Thread.sleep(1000);
-           System.out.println("Agenda table");
+           System.out.println("Agenda table\nID / OWNER");
 
            while (resultSet.next()){
-               System.out.println(resultSet.getString("id")+" "+resultSet.getString("owner"));
+               System.out.println(resultSet.getString("id")+". "+resultSet.getString("owner"));
            }
 
            Thread.sleep(1000);
@@ -100,11 +100,11 @@ public static void createTable() {
 
            ResultSet resultSet1 = statement.executeQuery("Select * from Contact;");
 
-           System.out.println("Contact table");
+           System.out.println("Contact table\nID/fName/lName/phoneNr/fk");
 
            while (resultSet1.next()){
                Thread.sleep(1000);
-               System.out.println(resultSet1.getString("contactID")+" "+resultSet1.getString("firstName")+
+               System.out.println(resultSet1.getString("contactID")+". "+resultSet1.getString("firstName")+
                        " "+resultSet1.getString("lastName")+" "+resultSet1.getString("phone")+
                        " "+resultSet1.getString("fkID"));
            }
